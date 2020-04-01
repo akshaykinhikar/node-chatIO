@@ -3,7 +3,7 @@ var http = require('http').createServer(app);
 const PORT = 3000;
 
 app.get('/', function(req, res){
-    res.send('initiated chatio');
+    res.sendFile(__dirname + '/index.html')
 })
 
 http.listen(PORT, function(){
